@@ -1,7 +1,7 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./App.css";
 import { Home } from "./pages/Home";
-import { StackComponent } from "./pages/Stack";
+import { StackPage } from "./pages/Stack";
 
 const router = createBrowserRouter([
   {
@@ -10,7 +10,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/Stack",
-    element: <StackComponent />,
+    element: <StackPage />,
   },
 ]);
 
