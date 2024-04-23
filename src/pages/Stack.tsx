@@ -1,5 +1,5 @@
 import { animated, useSprings } from "@react-spring/web";
-import { useCallback, useState } from "react";
+import { useState } from "react";
 import { v4 as uuid } from "uuid";
 
 class Node {
@@ -104,7 +104,7 @@ export const StackComponent = () => {
     setLength((prev) => prev + 1);
   };
 
-  const handleRemove = useCallback(() => {
+  const handleRemove = () => {
     if (!myStack.peek || length === 0) return;
 
     api.start((index) => {
@@ -120,7 +120,7 @@ export const StackComponent = () => {
     });
 
     setLength((prev) => prev - 1);
-  }, [length]);
+  };
 
   return (
     <div>
