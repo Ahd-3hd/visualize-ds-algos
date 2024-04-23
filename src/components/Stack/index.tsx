@@ -58,20 +58,7 @@ export const StackComponent = () => {
   return (
     <div>
       <Actions handleAdd={handleAdd} handleRemove={handleRemove} />
-
-      <div
-        style={{
-          width: "100%",
-          height: "100vh",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "flex-end",
-          overflow: "hidden",
-        }}
-      >
-        <Visualization springs={[...springs].reverse()} items={[...items]} />
-      </div>
+      <Visualization springs={[...springs].reverse()} items={[...items]} />
     </div>
   );
 };
