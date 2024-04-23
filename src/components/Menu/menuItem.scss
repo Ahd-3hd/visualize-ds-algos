@@ -1,0 +1,10 @@
+a {
+  font-size: 2rem;
+  color: rgb(212, 212, 212);
+  text-decoration: none;
+
+  &:hover {
+    color: rgb(177, 46, 46) !important;
+    transition: color 300ms;
+  }
+}
